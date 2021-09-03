@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+}
+
+body {
+    background-color: #eee;
+    color: #292929;
+}
+
+p, a {
+    font-size: 1.1em;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.infos div {
+    margin-top: 2em;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+}
+
+.avatar h1 {
+    font-size: 2em;
+}
+
+.foto {
+    width: 13em;
+    height: 13em;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .3);
+    margin-right: 2em;
+}
+
+.descricao *{
+    margin-bottom: .3em;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #292929;
+}
+
+a:hover {
+    color: #999;
+}
+
+.proj {
+    display: flex;
+    padding: 1.5em;
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .3);
+    border-radius: 1em;
+}
+
+.proj div {
+    margin: 1em 0 1em 1em;
+}
+
+.ppp {
+    width: 120px;
+}
+
+@media(max-width: 1200px) {
+    .main {
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main aside {
+        margin-top: 2em;
+    }
+
+    body {
+        padding: 14px;
+    }
+
+    .avatar {
+        flex-direction: column;
+    }
+
+    .foto {
+        width: 10em;
+        height: 10em;
+    }
+
+    .descricao {
+        font-size: .8em;
+    }
+
+    p, a {
+        font-size: .9em;
+    }
+
+    .proj {
+        padding: 1em;
+    }
+}
+
+aside a {
+    margin-bottom: 2em;
+}
+
+.logo {
+    margin-top: 3em;
+    width: 120px;
+    height: 120px;
+    -webkit-animation:spin 5s linear infinite;
+    -moz-animation:spin 5s linear infinite;
+    animation: spin 5s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.logo:hover {
+    -webkit-animation:spin 1s linear infinite;
+    -moz-animation:spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}

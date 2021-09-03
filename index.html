@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Victor Pizzaia dev</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="infos">
+            <div class="avatar">
+                <img src="./public/avatar.jpg" alt="Foto de perfil" class="foto">
+                <div>
+                    <h1>Victor Hugo Pizzaia</h1>
+                    <ul>
+                        <li><a href="https://github.dxc.com/vhugopizzaia" target="blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/victor-hugo-pizzaia-a9351b170/"
+                                target="blank">LinkedIn</a>
+                        </li>
+                        <li><a href="mailto:v_pizzaia@hotmail.com">E-mail</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="descricao">
+                <h2>Quem sou eu</h2>
+                <p>
+                    Prazer eu sou o Pizzaia, tenho <idade idade></idade> anos
+                    e sou apaixonado por técnologia.
+                </p>
+                <p>
+                    Trabalho como desenvolvedor e gosto muito da web com JavaScript
+                </p>
+                <p>
+                    Meu framework favorito é o
+                    <span style="color: #6163fb;">ReactJs</span>.
+                </p>
+            </div>
+            <div>
+                <img src="./public/logo.png" alt="Rotative Logo" class="logo">
+            </div>
+        </div>
+        <aside>
+            <a href="https://letmeask-c4f1a.web.app/" target="blank" class="proj">
+                <img src="./public/letmeask.svg" alt="LetMeAsk">
+                <div>
+                    <h1>LetMeAsk</h1>
+                    <p>É uma aplicação para perguntas e respostas</p>
+                    <p>desenvolvida com ReactJs, TypeScript e Sass.</p>
+                    <p style="text-align: right;">By Rocketseat</p>
+                </div>
+            </a>
+            <a href="https://github.com/Victor-Pizzaia/planning-poker-pizzaia" target="blank" class="proj">
+                <img src="./public/ppp.svg" alt="Planning Poker do Pizzaia" class="ppp">
+                <div>
+                    <h1>Planning Poker do Pizzaia</h1>
+                    <p>É uma aplicação simples utilizando WebSockets</p>
+                    <p>feita com ReactJs, TypeScript e NodeJs.</p>
+                    <p style="text-align: right; font-size: .8em;">Em desenvolvimento</p>
+                </div>
+            </a>
+        </aside>
+    </div>
+</body>
+<script>
+    const ano = 2001;
+    const idade = document.querySelector('[idade]');
+    idade.innerHTML = new Date().getFullYear() - ano;
+</script>
+
+</html>
